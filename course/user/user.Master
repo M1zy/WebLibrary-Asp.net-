@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="course.user.user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Online Library</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<style type="text/css">
+    body{
+        background: #c7b39b url(css/images/crossline-lines.png);
+    }
+</style>
+</head>
+<body>
+    <form id="f1" runat="server">
+<div class="shell">
+  <div id="header">
+    <a id="logo" href="/user/Items.aspx"  >
+        <img  src="css/images/Library.png"   height="64" width="300"  alt=""   />
+            </a>
+    <div id="cart"> <a href="account.aspx" class="cart-link">Your account</a>
+ </div>
+
+    <div id="navigation">
+      <ul>
+        <li><a href="items.aspx" class="active">Home</a></li>
+        
+          <li><a href="../admin/adminlogin.aspx">Admin</a></li>
+        <li><a href="registration.aspx">Registration</a></li>
+          <%
+              if(Session["user"]==null)
+              {
+                    %>
+                  <li><a href="login.aspx">Login</a></li>
+
+          <%
+              }
+              else
+              {%>
+                  <li><a href="logout.aspx">logout</a></li>
+          <%
+
+              }
+              %>
+
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div class="cl">&nbsp;</div>
+    <div id="content">
+<img src="https://cdn-images-1.medium.com/max/1200/1*56D27aV6HKexBFVGXX9Ccw.png" width="720" height="252"  alt="" />
+      <div class="books">
+          <asp:ContentPlaceHolder ID="c1" runat="server"></asp:ContentPlaceHolder>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div class="box search">
+        <h2>Search by </h2>
+        <div class="box-content">
+            
+            <label>Book Name</label>
+            <input type="text" class="field" id ="searchtextbox" />
+
+            <input type="button" class="search-submit" value="Search" onclick="search()" />
+            <p> please enter item name inside the textbox</p>
+        </div>
+      </div>
+
+      <div class="box categories">
+        <h2>Categories of Books <span></span></h2>
+        <div class="box-content">
+          <ul>
+            
+            <asp:DataList ID="dd" runat="server">
+                <ItemTemplate>
+                    <li><a href="items.aspx?category=<%#Eval("category") %>"><%#Eval("category") %></a></li>
+                </ItemTemplate>
+            </asp:DataList>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cl">&nbsp;</div>
+  </div>
+  <div class="side-full">
+
+    <div class="cols">
+      <div class="cl">&nbsp;</div>
+      <div class="col">
+        <h3 class="ico ico1">emails</h3>
+        <p>If you have any questions, please write me </p>
+        <p class="more"><a href="http://slabko-12@mail.ru" class="bul">slabko-12@mail.ru</a></p>
+          <p class="more"><a href="http://Kirilslabko123@gmail.com" class="bul">Kirilslabko123@Gmail.com</a></p>
+      </div>
+      <div class="col">
+        <h3 class="ico ico2">Additional</h3>
+        <p>Additional means of communication</p>
+        <p class="more"><a href="https://vk.com/assassindark" class="bul">VK</a></p>
+                
+        <p class="more"><a href="https://github.com/M1zy/" class="bul">GitHub</a></p>
+      </div>
+        
+  </div>
+      </div>
+
+  <div id="footer">
+    <p class="right"> &copy; 2019 Online library. Designed by Kirill Slabko </p>
+  </div>
+
+        
+</div>
+
+        </form>
+
+    <script type="text/javascript">
+        function search() {
+            window.location = "items.aspx?search=" + document.getElementById("searchtextbox").value;
+
+        }
+    </script>
+</body>
+
+</html>
