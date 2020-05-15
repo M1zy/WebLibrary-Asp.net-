@@ -1,15 +1,12 @@
 ﻿body {
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    font-size: 12px;
+    font-family: Forte;
+    font-size: 14px;
     line-height: 16px;
     color: #636363;
-   
 }
-.shell {
-    width: 960px;
-    margin: 0 auto;
-    padding: 10px;
-    background: #fff;
+@font-face {
+    font-family: CountrySide;
+    src: url('Countryside.ttf');
 }
 
 #header {
@@ -25,7 +22,7 @@
 
     #navigation ul {
         list-style-type: none;
-        height: 64px;
+        height: 55px;
         font-weight: bold;
         float: left;
     }
@@ -37,8 +34,8 @@
 
     #navigation ul li a {
                 float: left;
-                height: 64px;
-                line-height: 64px;
+                height: 53px;
+                line-height: 53px;
                 text-decoration: none;
                 color: #fff;
                 padding: 0 15px;
@@ -62,7 +59,7 @@ h1#logo {
     width: 960px;
     margin: 0 auto;
     padding: 10px;
-    background: #fff;
+    background: #737070;
 }
 #cart {
     float: right;
@@ -156,22 +153,40 @@ a.cart-link {
 
     #sidebar { float:left; width:226px;}
 
-    .box { padding:1px; border:solid 1px #dedede; margin-bottom:10px;}
+.box {
+    padding: 1px;
+    border: solid 1px #dedede;
+    margin-bottom: 10px;
+}
 
-.box h2{ background:#7f7f7f; color:#fff; font-weight: normal; padding:0 5px; position:relative; height:27px; line-height:27px; }
+        .box h2 {
+            background: #594821;
+            color: #fff;
+            font-weight: normal;
+            padding: 0 5px;
+            position: relative;
+            height: 27px;
+            line-height: 27px;
+        }
 
 .box h2 span{ position:absolute; width:10px; height:5px; background:url(images/h2-arr.gif); top:27px; right:10px; font-size:0; line-height:0;}
 
-.box-content { padding:5px;}
+.box-content {
+    padding: 5px;
+    background-color: #1a4a3c;
+    color:black;
+    font-size:16px;
+}
+
 .categories {
     min-height: 823px;
     background-color: darkslategrey;
 }
 .categories ul { list-style-type: none; font-size:13px; background-color:grey;}
-.categories ul li{ border-bottom:dashed 1px #ccc; padding:5px 0;}
+.categories ul li{ border-bottom:dashed 1px #ccc; padding:20px 0;}
 .categories ul li.last{ border-bottom:0; padding-bottom:0;}
 .categories ul li.product{ border-bottom:0; padding-bottom:0;}
-.categories ul li a{ color:yellow; text-decoration: none; background:url(images/cat.gif) no-repeat 0 4px; padding-left:17px;}
+.categories ul li a{ color:yellow; text-decoration: none; background:url(images/cat.gif) no-repeat 0 4px; padding:10px;}
 .categories ul li a:hover{ color:#8b0000; }
 
 .cols { padding:10px; background-color:gainsboro; height:150px; margin-top:20px;}

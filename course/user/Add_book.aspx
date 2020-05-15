@@ -33,7 +33,7 @@
             <td>
                 Book description
             </td>
-            <td style="width: 220px"><asp:TextBox ID="t5" runat="server" Height="110px" TextMode="MultiLine" Width="639px"></asp:TextBox></td>
+            <td style="width: 220px"><asp:TextBox ID="t5" runat="server" Height="110px" TextMode="MultiLine" Width="600px"></asp:TextBox></td>
         </tr>
                                 <tr>
             <td>

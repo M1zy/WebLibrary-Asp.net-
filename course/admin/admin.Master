@@ -13,7 +13,7 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
         <style>
     body{
-        background: #c7b39b url(logincss/crossline-lines.png);
+        background: #c7b39b url(logincss/crossline-line.jpg);
     }
 </style>
 </head>
@@ -27,7 +27,7 @@
                 <div class="navbar-header">
 
                     <a class="navbar-brand" href="Home.aspx">
-                        <img src="assets/img/logo.png" />
+                        <img src="logincss/logo.png" />
 
                     </a>
                                     <span class="logout-spn" >
@@ -42,7 +42,7 @@
         <!-- /. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
-                <h3 class="menu-title">Books-menu</h3>
+                <h3 class="menu-title" style="font-family:Forte; font-size:20px; color:orange;">Books-menu</h3>
                 <ul class="nav" id="main-menu">
 
 
@@ -63,7 +63,7 @@
                     
                 </ul>
   
-                <h3 class="menu-title">Users-menu</h3>
+                <h3 class="menu-title" style="font-family:Forte; font-size:20px; color:orange;">Users-menu</h3>
                 <ul class="nav" >
                                                            
                     <li >
@@ -81,7 +81,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-lg-12">
-                     <h2 style="text-align:center;" id="admin_header">ADMIN PANEL</h2>   
+                     <h2 style="font-family:Forte;text-align:center; font-size:25px; color:orange;" id="admin_header">ADMIN PANEL</h2>   
                     </div>
                 </div>              
                  <!-- /. ROW  -->

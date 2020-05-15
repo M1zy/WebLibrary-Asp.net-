@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="c1" runat="server">
    <p id="head">
-    <b id="Itemshead">  Book Catalog     
+    <b id="Itemshead" style="font-family:Impact; font-size:27px; color:black;">  Book Catalog     
         </b>
        </p>
     <asp:Repeater ID="d1" runat="server"> 

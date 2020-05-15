@@ -42,7 +42,7 @@
         <img src='../<%# Eval("product_image") %>' height="300" width="200" alt=""/>
             </div>
         <div style="height:300px; width:485px; float:left; border-style:solid; border-width:1px;">
-            <textarea  rows="22" cols ="73"><%# Eval("product_Text") %></textarea>
+            <textarea  rows="19" cols ="73"><%# Eval("product_Text") %></textarea>
       </div>
           </div>   
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

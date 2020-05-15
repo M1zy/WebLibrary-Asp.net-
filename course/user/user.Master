@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <style type="text/css">
     body{
-        background: #c7b39b url(css/images/crossline-lines.png);
+        background: #c7b39b url(css/images/crossline-line.jpg);
     }
 </style>
 </head>
@@ -19,7 +19,7 @@
     <a id="logo" href="/user/Items.aspx"  >
         <img  src="css/images/Library.png"   height="64" width="300"  alt=""   />
             </a>
-    <div id="cart"> <a href="account.aspx" class="cart-link">Your account</a>
+    <div id="cart"> <a style="font-size:16px;" href="account.aspx" class="cart-link">Your account</a>
  </div>
 
     <div id="navigation">
@@ -50,33 +50,33 @@
   <div id="main">
     <div class="cl">&nbsp;</div>
     <div id="content">
-<img src="https://cdn-images-1.medium.com/max/1200/1*56D27aV6HKexBFVGXX9Ccw.png" width="720" height="252"  alt="" />
+<img src="css/images/elibrary.jpg" width="720" height="252"  alt="" />
       <div class="books">
           <asp:ContentPlaceHolder ID="c1" runat="server"></asp:ContentPlaceHolder>
       </div>
     </div>
 
     <div id="sidebar">
-      <div class="box search">
-        <h2>Search by </h2>
+      <div class="box search" style="background:#2e4519;">
+        <h2 style="font-family:CountrySide; font-size:20px; color:orange;">Search by </h2>
         <div class="box-content">
             
             <label>Book Name</label>
             <input type="text" class="field" id ="searchtextbox" />
 
-            <input type="button" class="search-submit" value="Search" onclick="search()" />
+            <input type="button" class="search-submit" value="Search" onclick="search()" style="font-size:13px; font:bold;" />
             <p> please enter item name inside the textbox</p>
         </div>
       </div>
 
       <div class="box categories">
-        <h2>Categories of Books <span></span></h2>
+        <h2 style="font-family:CountrySide; font-size:23px; color:orange;">Categories of Books </h2>
         <div class="box-content">
           <ul>
             
             <asp:DataList ID="dd" runat="server">
                 <ItemTemplate>
-                    <li><a href="items.aspx?category=<%#Eval("category") %>"><%#Eval("category") %></a></li>
+                    <li><a style="font-family:CountrySide; font-size:18px;" href="items.aspx?category=<%#Eval("category") %>"><%#Eval("category") %></a></li>
                 </ItemTemplate>
             </asp:DataList>
 
@@ -88,16 +88,16 @@
   </div>
   <div class="side-full">
 
-    <div class="cols">
+    <div class="cols" style="background:#6a6b69; color:black; font-size:15px;">
       <div class="cl">&nbsp;</div>
       <div class="col">
-        <h3 class="ico ico1">emails</h3>
+        <h3 class="ico ico1" style="font-family:CountrySide; font-size:18px;">emails</h3>
         <p>If you have any questions, please write me </p>
         <p class="more"><a href="http://slabko-12@mail.ru" class="bul">slabko-12@mail.ru</a></p>
           <p class="more"><a href="http://Kirilslabko123@gmail.com" class="bul">Kirilslabko123@Gmail.com</a></p>
       </div>
       <div class="col">
-        <h3 class="ico ico2">Additional</h3>
+        <h3 class="ico ico2" style="font-family:CountrySide; font-size:18px;">Additional</h3>
         <p>Additional means of communication</p>
         <p class="more"><a href="https://vk.com/assassindark" class="bul">VK</a></p>
                 
@@ -107,8 +107,8 @@
   </div>
       </div>
 
-  <div id="footer">
-    <p class="right"> &copy; 2019 Online library. Designed by Kirill Slabko </p>
+  <div id="footer" style="font-family:CountrySide; font-size:18px; color:black;">
+    <p class="right"> &copy; 2020 Digital Library. Designed by Kirill Slabko </p>
   </div>
 
         
